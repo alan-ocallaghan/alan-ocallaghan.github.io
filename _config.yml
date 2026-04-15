@@ -61,6 +61,7 @@ author:
   name   : "Alan O'callaghan"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "A Solution Architect interested in Full Stack Engineering"
+  location : Leeds/United Kingdom
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -74,6 +75,9 @@ author:
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
    # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/alan-o-callaghan/"
 
 footer:
   links:
