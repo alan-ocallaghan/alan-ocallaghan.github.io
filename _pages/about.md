@@ -3,6 +3,11 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+A hardworking, self-motivated and well-organised individual with nine years of professional experience in the fields of Software Development. 
+Currently, I am working as a Solutions Architect at City IVAST.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+I worked at EE and BT Group as a Software Engineer Specialist between 2016 and 2025.
+
+Also, I have a background in Geographic Information Systems (GIS), Data Analysis and I worked at Big Property Data, Informed Solutions, National Grid UK, Sturgis Associates LLP, AECOM UK and Brookfield Utilities UK.
+
+I have postgraduate studies in Geodesy and Geographic Information Technologies, MSc Computer Science (University of Hertfordshire) and bachelor Town and Country Planning.
