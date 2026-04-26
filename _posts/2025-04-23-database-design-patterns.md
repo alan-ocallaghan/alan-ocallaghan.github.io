@@ -5,10 +5,12 @@ categories:
   - Technical Tutorials
   - Database Design
 tags:
+  - blog
   - database
   - design-patterns
   - sql
   - data-modeling
+  - 
 date: 2025-04-23
 ---
 
@@ -205,49 +207,6 @@ SELECT * FROM users WHERE deleted_at IS NULL;
 SELECT * FROM users WHERE deleted_at IS NOT NULL;
 ```
 
-### Audit Trail
-
-Track all changes to important records.
-
-```sql
-CREATE TABLE users (
-  user_id INT PRIMARY KEY,
-  username VARCHAR(100),
-  email VARCHAR(255),
-  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);
-
-CREATE TABLE user_audit_log (
-  audit_id INT PRIMARY KEY AUTO_INCREMENT,
-  user_id INT,
-  action VARCHAR(50),  -- INSERT, UPDATE, DELETE
-  old_values JSON,
-  new_values JSON,
-  changed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  changed_by INT,
-  FOREIGN KEY (user_id) REFERENCES users(user_id),
-  FOREIGN KEY (changed_by) REFERENCES users(user_id)
-);
-
--- Trigger to log changes
-DELIMITER $$
-
-CREATE TRIGGER user_update_trigger
-AFTER UPDATE ON users
-FOR EACH ROW
-BEGIN
-  INSERT INTO user_audit_log (user_id, action, old_values, new_values, changed_by)
-  VALUES (
-    NEW.user_id,
-    'UPDATE',
-    JSON_OBJECT('username', OLD.username, 'email', OLD.email),
-    JSON_OBJECT('username', NEW.username, 'email', NEW.email),
-    CURRENT_USER_ID()
-  );
-END$$
-
-DELIMITER ;
-```
 
 ### Polymorphic Associations
 
@@ -398,4 +357,3 @@ Effective database design requires careful planning and understanding of these p
 ✅ Optimize queries for performance  
 ✅ Implement audit trails for critical data  
 
-**Next steps:** Audit your current database schema against these patterns and optimize incrementally.
