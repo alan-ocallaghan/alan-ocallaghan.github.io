@@ -5,8 +5,3 @@
 layout: single
 author_profile: true
 ---
-I am a Computer Science *PhD student*  at University of Huddersfield. My research interests are in the area of
-microservices. My main projects are:
-- Project 1
-- Project 2
-- Project 3
